@@ -1,0 +1,10 @@
+; {x ["x"] y ["y"]} -> {"x" ["y"]}
+(function a->b x y
+  (fn entry
+    (reduce into {} (map #{% (y entry)} (x entry)))))
+
+(function lookup word
+  (let w->w (fn x y (reduce into {} (map (a->b x y) dictionary)))
+       As   (w->w :a :b)
+       Bs   (w->w :b :a))
+  (-> word (juxt As Bs) flatten sieve (join ", ")))

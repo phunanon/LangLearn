@@ -1,0 +1,9 @@
+(var dictionary []
+     examples   [])
+
+(function load-data
+  (let read-eval (comp read safe-eval))
+  (var dictionary (read-eval "data/dictionary.edn")
+       examples   (read-eval "data/examples.edn")))
+
+(load-data)

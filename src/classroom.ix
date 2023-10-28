@@ -1,0 +1,8 @@
+;Language learning program
+;Tests user on a dictionary of words and examples
+;Each correct answer gives 1 point, each incorrect answer gives -1 point
+;User is taught a new word every 5 points, exposed to it every time
+;User must select between five multiple choice of words seen before
+;User can also select "I don't know" to see the answer
+
+(function next-word 1)

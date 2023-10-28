@@ -1,0 +1,17 @@
+(function examples-containing word
+  (filter (comp (juxt :a :b) (map (split " ")) flatten (has? word))
+          examples))
+
+(function present-example entry
+  (let [a b notes] ((juxt :a :b :notes) entry))
+  (strn
+    "Bisaya:  " a
+    "\nEnglish: " b
+    (if notes
+      (str "\nNotes:    " notes))))
+
+(function present-examples-of word
+  (-> word
+      examples-containing
+      (map present-example)
+      (join "\n\n")))
