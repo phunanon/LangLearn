@@ -1,6 +1,11 @@
 (function examples-containing word
-  (filter (comp (juxt :a :b) (map (split " ")) flatten (has? word))
-          examples))
+  (filter
+    (comp (juxt :a :b :roots)
+          sieve
+          (map (comp lower-case (split " ")))
+          flatten
+          (has? (lower-case word)))
+    examples))
 
 (function present-example entry
   (let [a b notes] ((juxt :a :b :notes) entry))

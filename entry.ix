@@ -4,17 +4,15 @@
 (import "src/examples.ix")
 (import "src/classroom.ix")
 
-(function present entry
-  (let [a b] ((juxt :a :b) entry))
-  (str "Bisaya:   " (join ", " a) "\nEnglish:  " (join ", " b)))
-
 (satisfy args
   [[]]
-    "lookup"
+    "lookup examples random classroom"
   (comp 0 ["lookup"])
     (lookup (join " " (skip 1 args)))
   (comp 0 ["examples"])
     (present-examples-of (1 args))
   [["random"]]
     (random)
+  [["classroom"]]
+    (classroom)
   (str (0 args) " unrecognised."))

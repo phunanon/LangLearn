@@ -1,8 +1,43 @@
-;Language learning program
-;Tests user on a dictionary of words and examples
-;Each correct answer gives 1 point, each incorrect answer gives -1 point
-;User is taught a new word every 5 points, exposed to it every time
-;User must select between five multiple choice of words seen before
-;User can also select "I don't know" to see the answer
+;Use once my PR has been accepted:
+;(import "ZackeryRSmith/IXCurses")
+(import "phunanon/IXCurses")
 
-(function next-word 1)
+(function present-line num text
+  (str TC_FG_GRN (inc num) ". " TC_FG_BLU text TC_NRM))
+
+(function correct-msg
+  (str TC_BG_GRN "   " TC_NRM TC_FG_GRN " Correct!" TC_NRM))
+(function incorrect-msg actual
+  (str TC_BG_RED "   " TC_NRM TC_FG_RED " Wrong!" TC_NRM
+       " It was " TC_FG_BLU actual TC_NRM))
+
+(function classroom
+  ((fn n score
+    (let a-or-b  (rand-pick [:a :b])
+         b-or-a  ((toggle :a :b) a-or-b)
+         present (fn key num entry
+                   (-> entry key (join ", ") @(present-line num)))
+         entry   (n dictionary)
+         decoys  (-> dictionary (sample 4) (append entry) shuffle)
+         presenter @(present a-or-b))
+
+    (-> decoys (xmap presenter) (join "\n") print)
+
+    (let question
+      (str TC_NRM "What is " TC_FG_RED (-> entry b-or-a (join ", ")) TC_NRM "? ")
+         answer (prompt question))
+    (return-when (null? answer) score)
+    (let answer  (-> answer to-num dec)
+         correct (idx-of entry decoys))
+
+    (let correct?    (= answer correct)
+         new-score   (if correct? (inc score) score))
+
+    (print
+      ((if correct? correct-msg incorrect-msg)
+       (-> entry b-or-a (join ", ")))
+      (str " Score: " new-score " / " (inc n))
+      " (" (floor (* 100 (/ new-score (inc n)))) "%)\n")
+
+    (recur (inc n) new-score))
+    0 0))
