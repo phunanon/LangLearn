@@ -13,6 +13,6 @@
     (present-examples-of (1 args))
   [["random"]]
     (random)
-  [["classroom"]]
-    (classroom)
+  (comp 0 ["classroom"])
+    (classroom (1 args))
   (str (0 args) " unrecognised."))
