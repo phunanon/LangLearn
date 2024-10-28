@@ -13,32 +13,33 @@
 
 (function classroom _start
   (let start (if _start (to-num _start) 0))
-  ((fn n score
-    (let a-or-b  (rand-pick [:a :b])
-         b-or-a  ((toggle :a :b) a-or-b)
-         present (fn key num entry
-                   (-> entry key (join ", ") @(present-line num)))
-         entry   (n dictionary)
-         decoys  (-> dictionary (sample 4) (append entry) shuffle)
-         presenter @(present a-or-b))
+  (_classroom start start))
 
-    (-> decoys (xmap presenter) (join "\n") print)
+(function _classroom n score
+  (let a-or-b  (rand-pick [:a :b])
+       b-or-a  ((toggle :a :b) a-or-b)
+       present (fn key num entry
+                 (-> entry key (join ", ") @(present-line num)))
+       entry   (n dictionary)
+       decoys  (-> dictionary (sample 4) (append entry) shuffle)
+       presenter @(present a-or-b))
 
-    (let question
+  (-> decoys (xmap presenter) (join "\n") print)
+
+  (let question
       (str TC_NRM "What is " TC_FG_RED (-> entry b-or-a (join ", ")) TC_NRM "? ")
-         answer (prompt question))
-    (return-when (null? answer) score)
-    (let answer  (-> answer to-num dec)
-         correct (idx-of entry decoys))
+      answer (prompt question))
+  (return-when (null? answer) score)
+  (let answer  (-> answer to-num dec)
+      correct (idx-of entry decoys))
 
-    (let correct?    (= answer correct)
-         new-score   (if correct? (inc score) score))
+  (let correct?    (= answer correct)
+      new-score   (if correct? (inc score) score))
 
-    (print
+  (print
       ((if correct? correct-msg incorrect-msg)
-       (-> entry a-or-b (join ", ")))
+      (-> entry a-or-b (join ", ")))
       (str " Score: " new-score " / " (inc n))
       " (" (floor (* 100 (/ new-score (inc n)))) "%)\n")
 
-    (recur (inc n) new-score))
-    start start))
+  (recur (inc n) new-score))
