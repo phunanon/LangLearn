@@ -1,2 +1,6 @@
+(function present entry
+;TODO: finish this function
+  (print entry))
+
 (function random
   (-> dictionary rand-pick present))

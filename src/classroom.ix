@@ -1,6 +1,4 @@
-;Use once my PR has been accepted:
-;(import "ZackeryRSmith/IXCurses")
-(import "phunanon/IXCurses")
+(import "ZackeryRSmith/IXCurses")
 
 (function present-line num text
   (str TC_FG_GRN (inc num) ". " TC_FG_BLU text TC_NRM))
@@ -20,17 +18,18 @@
        b-or-a  ((toggle :a :b) a-or-b)
        present (fn key num entry
                  (-> entry key (join ", ") @(present-line num)))
-       entry   (n dictionary)
-       decoys  (-> dictionary (sample 4) (append entry) shuffle)
+       entry   (n dictionary))
+  (return-when (null? entry) score)
+    (let decoys  (-> dictionary (sample 4) (append entry) shuffle)
        presenter @(present a-or-b))
 
   (-> decoys (xmap presenter) (join "\n") print)
 
-  (let question
-      (str TC_NRM "What is " TC_FG_RED (-> entry b-or-a (join ", ")) TC_NRM "? ")
-      answer (prompt question))
+  (let question (str TC_NRM "What is " TC_FG_RED
+                     (-> entry b-or-a (join ", ")) TC_NRM "? ")
+      answer   (-> question prompt trim to-num))
   (return-when (null? answer) score)
-  (let answer  (-> answer to-num dec)
+  (let answer  (dec answer)
       correct (idx-of entry decoys))
 
   (let correct?    (= answer correct)

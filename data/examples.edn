@@ -1,3 +1,268 @@
 [
-  {:a "nagkaon ko", :b "I am eating" :notes "" :roots "kaon"}
+  {:a "nagkaon ko", :b "I am eating"}
+  {:a "wa koy (mga) mansanas", :b "I don't have (an) apple(s)"}
+  {:a "nagkaon ka", :b "you are eating"}
+  {:a "Suspek sa pagpusil-patay sa usa ka bag-ong nakagawas sa bilanggoan niadtong Oktubre 6", :b "The gun-killing suspect, the one who newly managed to escape the prison last October 6th"}
+  {:a "Kinsa man sila?", :b "Who are they all?"}
+  {:a "nagkaon siya", :b "he is eating"}
+  {:a "Siya ang nikaon sa biskwit", :b "She ate the biscuit"}
+  {:a "Siyay nikaon sa biskwit", :b "She ate the biscuit"}
+  {:a "nakita kita", :b "I saw you"}
+  {:a "Kita-kita / Kita ra ang gasturya, paduol diri", :b "This is our conversation, come closer"}
+  {:a "Basta kuyog tang duha", :b "As long as the two of us are together"}
+  {:a "Kami-kami / Kami ra ang gasturya", :b "This is our conversation (go away)"}
+  {:a "nagkaon kamo", :b "you all are eating"}
+  {:a "Asa imong yawi?", :b "Where is your bag?"}
+  {:a "Gikaon sa iring imong cake", :b "A cat ate your cake"}
+  {:a "Gikaon sa iring iyang cake", :b "A cat ate his cake"}
+  {:a "Gikaon sa iring inyong cake", :b "A cat ate y'all's cake"}
+  {:a "Gikaon sa iring ilang cake", :b "A cat ate their cake"}
+  {:a "Ako si Patrick", :b "I am Patrick"}
+  {:a "Ta-as John", :b "Tall John"}
+  {:a "Ta-as si John", :b "John is tall"}
+  {:a "Naa sa akong bag", :b "It's in my bag"}
+  {:a "Kinsa man ni?", :b "Who is this?"}
+  {:a "Buhata ni para ni Patrick", :b "Do this for Patrick"}
+  {:a "Kinsa man na?", :b "Who is that?"}
+  {:a "Unsa man na?", :b "What is that?"}
+  {:a "Langoya na na isla", :b "Swim to that island", :notes "1st na: pointing toward landmass, 2nd na: that landmass is an island"}
+  {:a "Kinsa man tu?", :b "Who was that?"}
+  {:a "Unsa man tu?", :b "What is this?"}
+  {:a "Kanusa man tu?", :b "When was that?"}
+  {:a "Kamusta man tu?", :b "How are they doing?"}
+  {:a "Kinsa man mo?", :b "Who are you people?"}
+  {:a "Unsa na?", :b "What is that?"}
+  {:a "Unsa man na?", :b "What is that? :)"}
+  {:a "Kinsa diay ka?", :b "Who are you? :)"}
+  {:a "Kinsa ka?", :b "Who are you??"}
+  {:a "Kanusa?", :b "When?"}
+  {:a "Kanusa na?", :b "When is it?"}
+  {:a "Kanusa man na?", :b "When is it? :)"}
+  {:a "Nganong inana man na?", :b "Why is it like that?"}
+  {:a "Kamusta naman ka?", :b "How are you?"}
+  {:a "Kamusta na ka?", :b "How are you? (after some time)"}
+  {:a "Guinsa (man) nimo?", :b "How did you do it?"}
+  {:a "Kinsa diay ka?", :b "Who are you really?"}
+  {:a "maayong buntag", :b "good morning"}
+  {:a "ang Merkado", :b "the market"}
+  {:a "Moadto ko sa Merkado", :b "I am going to the market"}
+  {:a "Dagana sa Gaisano karon", :b "Run to Gaisano now"}
+  {:a "Muadto ko sa merkado", :b "I will go to the wet market"}
+  {:a "Kusog mu baws sa Chihuahua sa among silingan na sige ug paghot", :b "Quick to fight back against the Chihuahua of the neighbour that constantly barks"}
+  {:a "Daot ang iring", :b "The cat is skinny"}
+  {:a "Bugnaw sa tubig", :b "The water (e.g. the ocean) is cold"}
+  {:a "Bugnaw ang tubig", :b "The water (e.g. glass) is cold"}
+  {:a "Huwat sa", :b "Wait!"}
+  {:a "Kalma sa", :b "(first), calm down (for now)"}
+  {:a "Buhata sa factory", :b "Make it at the factory"}
+  {:a "Kalma sa", :b "(first), calm down (for now)"}
+  {:a "Tahia sa balay", :b "(imperative) sew it at home"}
+  {:a "Dagana ang tindahan", :b "Run to the mall"}
+  {:a "Any babae ky muadto sa Manila", :b "The woman will go to Manila"}
+  {:a "Mao tu ang maayo na adlaw", :b "That was the good day"}
+  {:a "Maayong gabii", :b "Good evening"}
+  {:a "Uy! Kamusta naman ka?", :b "Hey! How are you?"}
+  {:a "Dili lang, salamat ^^", :b "No, thank you ^^"}
+  {:a "Dili lang, salamat ^^", :b "No, thank you ^^"}
+  {:a "Mangayo ko ug pasaylo nimo", :b "I'm asking for your forgiveness"}
+  {:a "Asa ka padulong?", :b "Where are you going?"}
+  {:a "Asa na?", :b "Where is that?"}
+  {:a "Asa na?", :b "Where is it?"}
+  {:a "Asa man na?", :b "Where is that?"}
+  {:a "Asa ka padulong?", :b "Where are you going?"}
+  {:a "Dira ko padulong", :b "I'm going over there"}
+  {:a "Padulong ko sa Merkado", :b "I am going to the market"}
+  {:a "Niadto ko sa tindahan", :b "I went to the store"}
+  {:a "Naga-adto ko sa tindahan karon", :b "I am going to the store"}
+  {:a "Muadto ko sa tindahan (unya)", :b "I will go to the store"}
+  {:a "Mag-adto ko sa tindahan unya", :b "I will go to the store (classically)"}
+  {:a "Moadto ko sa Merkado", :b "I will go to the market"}
+  {:a "Dili ka mamatay", :b "You will not die"}
+  {:a "Niadto ko sa Merkado", :b "I went to the market"}
+  {:a "Niadto ka?", :b "You went?"}
+  {:a "Salamat sa gift!", :b "Thank you for the gift"}
+  {:a "Salamat kaayo!", :b "Thanks very much!"}
+  {:a "Palihog ko ana", :b "Can you pass me that please?"}
+  {:a "Palihog, pasayloa ko", :b "Please, forgive me"}
+  {:a "Mangayo ko ug pasaylo nimo", :b "I'm asking for your forgiveness"}
+  {:a "gamay ra", :b "just a little"}
+  {:a "sige pa", :b "It's fine! (sarcastically mostly these days)"}
+  {:a "(ma) okay ra na", :b "it's fine"}
+  {:a "mga auto", :b "the cars"}
+  {:a "mga kahoy", :b "the trees/forest"}
+  {:a "Daghang mga kahoy", :b "The many trees"}
+  {:a "Salamat kaayo!", :b "Much thanks!"}
+  {:a "Sorry kaayo", :b "I'm really sorry"}
+  {:a "Sorry gamay", :b "Little bit sorry :^)"}
+  {:a "Ang babae kay muadto sa Manila", :b "The woman will go to Manila"}
+  {:a "Daghang salamat", :b "Many thanks"}
+  {:a "daghan ra kaayo", :b "too many"}
+  {:a "Kusog kaayo", :b "really strong"}
+  {:a "Buhata ni para nako palihog", :b "Do this for me please"}
+  {:a "Buhata ni para ni Patrick palihog", :b "Do this for Patrick please"}
+  {:a "Buhata na para nimo palihog", :b "Do that for yourself please"}
+  {:a "Bayran ra tika dong ipa compute nakong P pila na ka hours inyo nabuhat", :b "???"}
+  {:a "Mangayo ko ug pasaylo nimo", :b "I'm asking for your forgiveness"}
+  {:a "Ayaw na buhata", :b "Don't do that"}
+  {:a "Ayawg buhata na", :b "Don't do that", :notes "classical"}
+  {:a "Ayawg adto didto", :b "Don't go there"}
+  {:a "Don't go", :b "Ayawg adto"}
+  {:a "Pagkaon!", :b "Eat!"}
+  {:a "Pagkaon nako", :b "When I ate earlier"}
+  {:a "Pagbantay!", :b "Watch out!"}
+  {:a "Uy! Pagbantay diha!", :b "Hey! Watch out!"}
+  {:a "Pagbantay diri ha?", :b "Be careful here, okay?"}
+  {:a "Bantayi diri ha?", :b "Be careful here, okay?", :notes "-i constantly do"}
+  {:a "Pagbantay niya/nila/ani/PNoun ha?", :b "Watch out for him/her/them/it"}
+  {:a "Ayawg kalimti ang pamahaw", :b "Don't forget breakfast"}
+  {:a "naa (na?)koy tsa", :b "I have tea"}
+  {:a "hi-balo", :b "knowing"}
+  {:a "hingamigo siya", :b "he's friendly"}
+  {:a "hinguko", :b "trimming fingernails"}
+  {:a "balo nimo", :b "Not my problem / I don't know"}
+  {:a "hinguko", :b "trimming fingernails"}
+  {:a "ikauna", :b "first"}
+  {:a "kalinaw", :b "calmness"}
+  {:a "kainit", :b "hotness"}
+  {:a "mudagan", :b "to run / to start running"}
+  {:a "matulog", :b "to sleep / to go to sleep"}
+  {:a "pangbalay", :b "for the house"}
+  {:a "pangbunal", :b "something to hit things with"}
+  {:a "panglimpyo didto" :b "???"}
+  {:a "panghugas", :b "go wash!"}
+  {:a "pinakahugaw", :b "most dirty"}
+  {:a "pinakagwapo", :b "most handsome"}
+  {:a "Taga-UK", :b "from the UK"}
+  {:a "Asa ka gapuyo? Taga-UK", :b "Where are you living? From the UK"}
+  {:a "Taga asa man tu siya?", :b "Where is he/she from?"}
+  {:a "palayo diri", :b "Go away from here"}
+  {:a "Hapit ha maabot iyang stuff", :b "His stuff is about to arrive"}
+  {:a "patay na imong itoy", :b "your puppy is dead"}
+  {:a "Nagkaon ko sa mansanas", :b "I'm eating the apple"}
+  {:a "init sa kusina", :b "the kitchen is hot"}
+  {:a "kwarto ni Mikha", :b "Mikha's bedroom"}
+  {:a "gihigugma tika", :b "I love you"}
+  {:a "Gihigugma ko nimo?", :b "Do you love me?"}
+  {:a "dugay/late man ka", :b "you're late"}
+  {:a "dugay lagi ka?", :b "Why are you late?"}
+  {:a "Naligo ko ganiha/ganina", :b "I bathed earlier"}
+  {:a "Naligo ko karon", :b "I am bathing right now"}
+  {:a "Maligo ko unya", :b "I will bathe later"}
+  {:a "Maligo ko", :b "I will bathe soon"}
+  {:a "Murag bayut siya", :b "I think he's gay"}
+  {:a "Tabangi ko ani palihog", :b "Help me with this please"}
+  {:a "Tuohi ko", :b "Believe me"}
+  {:a "ihilak lang", :b "Just have a cry about it"}
+  {:a "Dagana ang Gaisano karon", :b "Run to Gaisano now"}
+  {:a "Gi ngisihan ko nimo", :b "You smiled at me"}
+  {:a "Gituohan ko nimo", :b "You believed in me"}
+  {:a "Tabangan tika ug / tikag hugas sa mga plato", :b "I'll help you wash the dishes"}
+  {:a "ni kuyog ka", :b "you went with someone"}
+  {:a "Basta kuyog lang 'ta", :b "??"}
+  {:a "magkatawa ko'ng maghunahuna", :b "it makes me laugh to think"}
+  {:a "Dili na ko mag-assume", :b "I won't assume (anymore)"}
+  {:a "apan karon nabag-o na", :b "but now it's / something's new / changed"}
+  {:a "bagbag-o kato", :b "it was a change"}
+  {:a "ballpen man gani mawala, feelings pa kaha", :b "if a ballpen will/can get lost, feelings even more!"}
+  {:a "Diri na lang ko kutob", :b "This is where I stop (emotionally)"}
+  {:a "Diri na lang ko taman", :b "This is where I have enough - I've had enough"}
+  {:a "balik balik", :b "again, again!"}
+  {:a "Ganahan ko mukaon balik", :b "I want more food"}
+  {:a "Tahia sa balay", :b "(imperative) sew it at home"}
+  {:a "na-ligsan ka ug auto", :b "Did you get run over by a car?"}
+  {:a "Nitan-aw ko ug salida", :b "I watched a show"}
+  {:a "Nagtan-aw ug salida ganiha", :b "I watched a show"}
+  {:a "Nitan-aw ko sa salida", :b "I watched the show"}
+  {:a "Nagtan-aw ko ug salida (karon)", :b "I'm watching a show"}
+  {:a "Mutan-aw ko ug salida", :b "I will watch a movie"}
+  {:a "ganahan ka init tubig?", :b "Do you want hot water?"}
+  {:a "Kara-an ang aparador", :b "The cabinet is old"}
+  {:a "Limpyo ug init ang tubig", :b "the water is clean and hot"}
+  {:a "Presko, limpyo, ug init ang tubig", :b "The water is fresh, clean, and hot"}
+  {:a "Alegre pa, ug lingaw pajud ang silingan", :b "The neighbour is lively and fun"}
+  {:a "Bogo pa, ug samok pajud ang silingan", :b "The neighbour is dumb and annoying"}
+  {:a "wala pasad ni pay ang katung article kuan", :b "not yet paid the that article thing ???"}
+  {:a "daghan tau", :b "many people"}
+  {:a "tiwasan tika ron", :b "I will finish you"}
+  {:a "nakakaon na ka?", :b "Have you eaten? Have you had the chance to eat?"}
+  {:a "nakagawas", :b "manage to go out / escape"}
+  {:a "mga pinakete sa gituohang shabu nga motimbang og 13.98 gramos.", :b "packets of what is believed to be shabu that weighed 14 grams."}
+  {:a "13.98 gramos nga dunay standard drug price (SDP) nga P95,064.", :b "???"}
+  {:a "Ganahan pud kong maduol gamay", :b "???"}
+  {:a "sama niini", :b "like this"}
+  {:a "Giingnan ko sa imong friends", :b "Your friends told me"}
+  {:a "pagpusil-patay", :b "gun killing"}
+  {:a "nadakpan sa buy-bust sa kapulisan", :b "caught by the police"}
+  {:a "Motorsiklo mibangga sa van", :b "Motorcycle crashes into van"}
+  {:a "Gikuha sila", :b "They were taken"}
+  {:a "Gikuha nila sa pinakete", :b "They took the packet"}
+  {:a "Gikuha ko nimo", :b "You took me"}
+  {:a "mga pinakete sa gituohang shabu", :b "packets"}
+  {:a "motimbang 13.98 gramos", :b "weighed 13.98 grammes"}
+  {:a "nasuta nga personal ang motibo sa krimen", :b "found the crime's motive to be personal"}
+  {:a "Malibang ko ron", :b "I will poop!!"}
+  {:a "subay niini", :b "following this"}
+  {:a "human ang mga saksi nitudlo", :b "after the witnesses pointed out"}
+  {:a "Unsa imong giingon nako?", :b "What did you say about me?"}
+  {:a "naa rako diring dapita", :b "I'm only right here close"}
+  {:a "samot mas bati", :b "even more ugly"}
+  {:a "Wa gyud ko kasagang", :b "I cannot fathom it"}
+  {:a "Ang tanang problema ipadaplin lang usa", :b "All the problems set aside for now"}
+  {:a "Ang mga ud gipalata ang pagkaon", :b "The worms are rotting the food"}
+  {:a "Gnilnig ko?", :b "Am I impressive?"}
+  {:a "Gnilniga bai", :b "That's impressive, mate"}
+  {:a "Sikyu napalgang patay sa pwesto", :b "Security guard encountered death (died) at his post"}
+  {:a "Nigerian mobiya unta sa trabaho", :b "Nigerian wants to leave work"}
+  {:a "Nigerian mobiya unta sa trabaho, wa nangabuso", :b "Nigerian that wanted to leave their job, there was no abuse" :notes "https://www.sunstar.com.ph/superbalita-cebu/nigerian-mobiya-unta-sa-trabaho-wa-nangabuso"}
+  {:a "nihawk ko nimo", :b "I kiss you"}
+  {:a "sagdi lang work naman ka next year", :b "???"}
+  {:a "namatay siya tungod sa grabeng bun-og nga iyang nahiaguman", :b ""}
+  {:a "gitabangan ug kulata", :b "help in beating" :roots "tabang"}
+  {:a "human gitabangan sa pagkulata", :b "after they collectively beat him" :roots "kulata"}
+  {:a "niadtong Sabado sa alas 2 sa hapon", :b "on Sunday at 2PM"}
+  {:a "kalabutan sa bitcoins", :b "concerning the bitcoins"}
+  {:a "Natagak sa ulingan nga nagbaga, patay" :b "???"}
+  {:a "Ulahi man ka ni Jan!" :b "You're behind Jan (in the race!)"}
+  {:a "aron dili mu tax ug maayo" :b "so that [it] will not tax badly"}
+  {:a "Adto ko higda sa ila" :b "I will sleep there at their house"}
+  {:a "Dia siya diri" :b "Here is over here"}
+  {:a "Makaari ka ig Lunis?" :b "Can you come over on Monday?" :roots "ari"}
+  {:a "Kinsay ganahan" :b "Who wants (it)?" :roots "kinsa"}
+  {:a "Swito ko sa Bisaya" :b "I'm a Bisaya expert"}
+  {:a "nagtanaw ko" :b "I'm looking" :roots "tanaw"}
+  {:a "Bisaya na dako" :b ""}
+  {:a "Way paki" :b "no care"}
+  {:a "Way magbuot" :b "don't tell me what to do"}
+  {:a "Init sa kusina" :b "The kitchen (a far away place) is hot"}
+  {:a "Dai ali diri, sabak daddy, bi" :b "Baby, come here, sit on daddy's lap"}
+  {:a "Nag unsa ka?" :b "What are you doing?"}
+  {:a "Pasayloa ko" :b "I'm sorry"}
+  {:a "Wala ko kita" :b "I did not see"}
+  {:a "Wa ko kabao" :b "I don't know"}
+  {:a "Ang upload sad dali" :b "The upload is also fast"}
+  {:a "Ayaw kaguol, magtsinelas ko" :b "Don't worry, I will wear slippers"}
+  {:a "Bisaya ni bai" :b "???"}
+  {:a "Kinsa kuyog?" :b "Who else wants to come?"}
+  {:a "Ang tanang problema ipadaplin lang usa" :b "All the problems, let's put to the side, for now"}
+  {:a "Maayong pag-abot" :b "Welcome (e.g. to a home, to same place as you)"}
+  {:a "Pagpili'g matimo" :b "Choose something to snack"}
+  {:a "Ug pwestuhi'g komportable" :b "And please position yourself comfortably"}
+  {:a "Hilas kay ka motanaw nako" :b "You're looking at me very hilas-ly"}
+  {:a "Hilas kay ka tanawn" :b "You look very hilas"}
+  {:a "Way sapayan" :b "No problem???"}
+  {:a "" :b ""}
+  {:a "" :b ""}
+  {:a "" :b ""}
+  {:a "" :b ""}
+  {:a "" :b ""}
+  {:a "" :b ""}
+  {:a "" :b ""}
+  {:a "" :b ""}
+  {:a "" :b ""}
+  {:a "" :b ""}
+  {:a "" :b ""}
+  {:a "" :b ""}
+  {:a "" :b ""}
+  {:a "" :b ""}
+  {:a "" :b ""}
 ]

@@ -1,3 +1,754 @@
 [
-  {:a ["nagkaon"] :b ["eating"] :notes ""}
+  {:a ["ako" "ko" "koy" "kog" "nako"] :b ["I" "me"] :notes "koy is used for naa; kog is used with verbs with objects"}
+  {:a ["ikaw" "ka" "nimo"] :b ["you"]}
+  {:a ["sila"] :b ["(subject of an intransitive sentence)"] :notes "see kuha for example"}
+  {:a ["nila" "nilang"] :b ["(posessive pronoun/modifier)" "(subject of a transitive sentence)"] :notes "see kuha for example"}
+  {:a ["siya" "siyay" "sya"] :b ["he" "she"] :notes "can be pronounced sha"}
+  {:a ["kita" "'ta" "tang"] :b ["you and me and others" "us" "we" "see"] :notes "pronounced kiTA for see"}
+  {:a ["kami" "mi"] :b ["me and others" "us" "we"]}
+  {:a ["kamo"] :b ["you all"]}
+  {:a ["imong" "imohang"] :b ["your (singular)" "yours (singular)"] :notes "imong is simply an abbreviation"}
+  {:a ["iyang" "iyahang"] :b ["his" "hers" "its"]  :notes "iyang is simply an abbreviation"}
+  {:a ["among" "amoa"] :b ["mine and others'"] :notes "use among if noun follows, or amoa if demonstrative pronoun follows"}
+  {:a ["atong" "atoa"] :b ["yours and mine"] :notes "use atong if noun follows, or atoa if demonstrative pronoun follows"}
+  {:a ["inyong"] :b ["your (plural)" "yours (plural)"]}
+  {:a ["ilang"] :b ["their" "theirs"]}
+  {:a ["si"] :b ["am [name]"] :notes "or any proper noun?"}
+  {:a ["akong" "akoang" "nako"] :b ["my"] :notes "ako ang; nako follows noun"}
+  {:a ["ani"] :b ["it/that (close)"] :notes "an animal or object"}
+  {:a ["ana" "kato"] :b ["it/that (far)"] :notes "an animal or object"}
+  {:a ["ni"] :b ["this" "this (person)"]}
+  {:a ["na" "kato"] :b ["that" "that (person)"]}
+  {:a ["ana" "kato"] :b ["that"] :notes "During indication"}
+  {:a ["tu"] :b ["(was) that" "(was) that (person)"]}
+  {:a ["mo"] :b ["you (plural)"]}
+  {:a ["unsa"] :b ["what"]}
+  {:a ["kinsa"] :b ["who"]}
+  {:a ["kanusa"] :b ["when"] :notes "Pronounced kanus'a"}
+  {:a ["ngano"] :b ["why"]}
+  {:a ["kamusta"] :b ["how (are you)"]}
+  {:a ["giunsa"] :b ["how" "how (did)"]}
+  {:a ["unsaon"] :b ["how" "how (can)" "how (to)"]}
+  {:a ["nag unsa"] :b ["what (doing)"]}
+  {:a ["diay"] :b ["really"]}
+  {:a ["maayo" "may" "ayo"] :b ["good" "badly"] :notes "good is the default; ayo is call-out"}
+  {:a ["buntag"] :b ["morning"]}
+  {:a ["udto"] :b ["noon"]}
+  {:a ["ang" "sa"] :b ["the"] :notes "ang for improper nouns, sa for proper nouns; sa is used as 'to' mostly when modal verb, and 'the' otherwise"}
+  {:a ["sa"] :b ["for now" "first" "wait"] :note "pronounced very short when it's 'for now / first'"}
+  {:a ["sa"] :b ["at"] :note "pronounced very short when it's 'for now / first'; used when referring to a place that's far away"}
+  {:a ["ang" "sa"] :b ["to(ward)"]}
+  {:a ["ang mga" "sa mga"] :b ["the (plural)"] :notes "pronounced manga"}
+  {:a ["wala" "wa"] :b ["no(thing)"]}
+  {:a ["adlaw"] :b ["day"]}
+  {:a ["gabii" "gabie"] :b ["evening"]}
+  {:a ["hapon"] :b ["afternoon"]}
+  {:a ["uy"] :b ["hey"]}
+  {:a ["kamusta"] :b ["how are" "hello"]}
+  {:a ["lami"] :b ["delicious" "tasty"]}
+  {:a ["kaon"] :b ["to eat"]}
+  {:a ["tubig"] :b ["water"]}
+  {:a ["kape"] :b ["coffee"]}
+  {:a ["dili"] :b ["no" "not"] :notes "hindi in Tagalog"}
+  {:a ["lang"] :b ["only"] :notes "Such as it's all you can say"}
+  {:a ["o" "oo"] :b ["yes"]}
+  {:a ["ug" "og" "'g"] :b ["and" "by" "for" "(object marker)" "a"]}
+  {:a ["ugma"] :b ["tomorrow"]}
+  {:a ["gahapon"] :b ["yesterday"]}
+  {:a ["kagahapon"] :b ["past"]}
+  {:a ["karon"] :b ["now" "today"] :notes "adverb of time"}
+  {:a ["karong hapon"] :b ["this afternoon"]}
+  {:a ["kini" "niini"] :b ["this"] :notes "niini is like this in the past, of e.g. an article"}
+  {:a ["kana"] :b ["that"]}
+  {:a ["dira" "diha" "dha"] :b ["there"]}
+  {:a ["dinhi"] :b ["here"]}
+  {:a ["asa"] :b ["where"]}
+  {:a ["padulong" "padung"] :b ["going"]}
+  {:a ["mu-" "mo-" "i-"] :b ["about to do"] :notes "Preference: mu- due to pronunciation"}
+  {:a ["ni-" "mi-" "ni"] :b ["(past tense)" "did do"] :notes "is sometimes written alone e.g. ni pay (paid)"}
+  {:a ["adto"] :b ["to go"] :notes "Padulong is informal, naga- (... karon) is more formal" :notes "can also be for (far away, future)"}
+  {:a ["moadto"] :b ["will go"]}
+  {:a ["niadto"] :b ["went"]}
+  {:a ["niadto"] :b ["went"]}
+  {:a ["(i)skwelahan"] :b ["school"]}
+  {:a ["(i)skwela"] :b ["to study" "to go to school"]}
+  {:a ["nag-" "nang-"] :b ["did do"] :notes "uncommon"}
+  {:a ["buwan"] :b ["Moon"]}
+  {:a ["trabaho"] :b ["work" "to work"]}
+  {:a ["trabahoan"] :b ["workplace"]}
+  {:a ["-an" "-nan" "-han"] :b ["place of a verb happening"] :notes "-han (or -nan) when following a vowel"}
+  {:a ["hulma"] :b ["to sculpt" "to shape"]}
+  {:a ["hulma-han"] :b ["place of sculpting/shaping"]}
+  {:a ["bitaw"] :b ["true" "indeed"]}
+  {:a ["tuod"] :b ["indeed" "it's true"] :notes "More formal / sophisticated"}
+  {:a ["kanang" "nang?"] :b ["um" "y'know"]}
+  {:a ["kuti"] :b ["hassle"]}
+  {:a ["salamat"] :b ["thanks" "thank you"] :notes "stress la"}
+  {:a ["palihog"] :b ["please"] :notes "Pronounced palihug, long i; can't be used for offering"}
+  {:a ["para"] :b ["for"]}
+  {:a ["gamay"] :b ["little"]}
+  {:a ["pero"] :b ["but"]}
+  {:a ["ra"] :b ["only"]}
+  {:a ["sige" "sge"] :b ["okay" "constantly" "always"] :notes "can be magsige for always"}
+  {:a ["batiis"] :b ["leg"]}
+  {:a ["paa"] :b ["thigh"] :notes "both human anatomy and carnivorous anatomy"}
+  {:a ["bukton"] :b ["arms"]}
+  {:a ["baba"] :b ["mouth"]}
+  {:a ["ilong"] :b ["nose"]}
+  {:a ["bata"] :b ["child"]}
+  {:a ["mata"] :b ["eye" "eyes???"]}
+  {:a ["nindot"] :b ["nice" "beautiful"]}
+  {:a ["lobot"] :b ["butt"]}
+  {:a ["buhok"] :b ["hair"]}
+  {:a ["tsa"] :b ["tea"] :notes "pronounced cha'a"}
+  {:a ["auto"] :b ["car"]}
+  {:a ["kahoy"] :b ["tree"]}
+  {:a ["kaayo" "kay"] :b ["great" "much"]}
+  {:a ["kay"] :b ["(connects noun to verb)"]}
+  {:a ["daghan" "daghang"] :b ["many"]}
+  {:a ["kusog"] :b ["strong" "strength"]}
+  {:a ["buhat" "buhata"] :b ["to do" "to make"]}
+  {:a ["gibuhat" "nabuhat"] :b ["made"] :notes "nabuhat is accidental"}
+  {:a ["ngayo" "mangayo" "pangutana"] :b ["to ask"] :notes "ma/ngayo: ask for something (e.g. money); pangutana (e.g. a question)"}
+  {:a ["ayaw"] :b ["don't"]}
+  {:a ["ayawg"] :b ["don't (ug)"] :notes "Use when following word is verb"}
+  {:a ["pag-"] :b ["imperative" "past tense" "makes verb a noun"] :notes "When imperative, stress is on following syllable; when past tense or noun, it is followed by a glottal stop"}
+  {:a ["pagkaon"] :b ["food"]}
+  {:a ["lakaw"] :b ["to walk"]}
+  {:a ["paglakaw"] :b ["walk" "journey"]}
+  {:a ["dagan"] :b ["run"]}
+  {:a ["bantay" "bantay bantay"] :b ["to watch out" "watch out!"]}
+  {:a ["didto"] :b ["far away"]}
+  {:a ["kalimti"] :b ["forget"]}
+  {:a ["pamahaw"] :b ["breakfast"]}
+  {:a ["paniudto"] :b ["lunch"]}
+  {:a ["panihapon"] :b ["dinner"]}
+  {:a ["diksiyonaryo"] :b ["dictionary"]}
+  {:a ["inpormasyon"] :b ["information"]}
+  {:a ["naa" "adunay" "dunay"] :b ["to have" "(but) there is"]}
+  {:a ["dong"] :b ["boy (honorific)"]}
+  {:a ["inday" "day" "dai"] :b ["girl (honorific)"]}
+  {:a ["kuya"] :b ["older guy (honorific)"]}
+  {:a ["ate"] :b ["older girl (honorific)"]}
+  {:a ["hi-"] :b ["-ly"] :notes "either used to indicate removal/cleaning or a state or tendency"}
+  {:a ["him-" "hin-" "hing-"] :b ["-ly"] :notes "use hing- if next phoneme is vowel"}
+  {:a ["bai" "amigo"] :b ["friend" "mate"]}
+  {:a ["ambot" "balo"] :b ["don't know"]}
+  {:a ["kahibalo"] :b ["knowingness"] :notes "prefixes ka- hi-"}
+  {:a ["kuko" "uko"] :b ["fingernail"]}
+  {:a ["ika-"] :b ["-st" "-nd" "-rd" "-th"] :notes "also used to answer how many times"}
+  {:a ["usa" "una"] :b ["one"]}
+  {:a ["duha" "dos"] :b ["two"]}
+  {:a ["tulo"] :b ["three"]}
+  {:a ["upat"] :b ["four"]}
+  {:a ["ka-"] :b ["-ness"]}
+  {:a ["inom"] :b ["to drink"]}
+  {:a ["tagpila"] :b ["how much"] :notes "e.g. money"}
+  {:a ["ika pila" "pila"] :b ["how many (times)"]}
+  {:a ["siguro"] :b ["maybe" "sure"]}
+  {:a ["linaw"] :b ["calm" "clear"]}
+  {:a ["kalma"] :b ["feeling calm"]}
+  {:a ["init"] :b ["hot"]}
+  {:a ["bugnaw" "tugnaw" "gitugnaw"] :b ["cold"] :notes "bugnaw when an object is cold; tugnaw feels cold (e.g. a person); interchangable when a place"}
+  {:a ["basa"] :b ["wet" "to read"] :notes "wet: stress last syllable; read: longer vowels"}
+  {:a ["mabasa"] :b ["to be wet"]}
+  {:a ["uga"] :b ["dry"]}
+  {:a ["ma-" "mu-"] :b ["to -"]}
+  {:a ["tulog"] :b ["to sleep"]}
+  {:a ["pang-"] :b ["for -" "go -"] :notes "see pag-"}
+  {:a ["balay"] :b ["house"]}
+  {:a ["bunal"] :b ["hit" "to hit"]}
+  {:a ["limpyo"] :b ["clean"]}
+  {:a ["hugas"] :b ["wash"]}
+  {:a ["pinaka-"] :b ["-est" "(superlative)"]}
+  {:a ["gwapo"] :b ["handsome"]}
+  {:a ["gwapa"] :b ["pretty"]}
+  {:a ["nawng"] :b ["face"]}
+  {:a ["bati"] :b ["ugly" "bad"]}
+  {:a ["taga-" "taga"] :b ["from -"] :notes "can be written without a space"}
+  {:a ["ga puyo"] :b ["living"] :notes "In terms of where you live"}
+  {:a ["yawi"] :b ["key"]}
+  {:a ["biskwit"] :b ["biscuit"]}
+  {:a ["gasturya"] :b ["having a conversation" "talking"]}
+  {:a ["diri" "diring"] :b ["here"] :notes "here, nearer speaker than interlocutor"}
+  {:a ["palayo"] :b ["go away"]}
+  {:a ["iro"] :b ["dog"]}
+  {:a ["iring"] :b ["cat"]}
+  {:a ["hilas"] :b ["obnoxious" "fancy" "posh"]}
+  {:a ["hapit"] :b ["almost"]}
+  {:a ["itoy"] :b ["puppy"]}
+  {:a ["kuting"] :b ["kitten"]}
+  {:a ["langgam"] :b ["bird"] :notes "Ant in Tagalog"}
+  {:a ["tuko"] :b ["gecko" "lizard"] :notes "onomatopoeia etymology"}
+  {:a ["bitin"] :b ["snakes"]}
+  {:a ["bao"] :b ["turtle"]}
+  {:a ["ilaga"] :b ["rat" "mouse"]}
+  {:a ["baka" "kabao" "kabaw"] :b ["cow" "beef"] :notes "Tagalog: kalabao"}
+  {:a ["baboy"] :b ["pig" "pork"]}
+  {:a ["kanding"] :b ["goat" "sheep"]}
+  {:a ["kabayo"] :b ["horse"] :notes "Same in Tagalog"}
+  {:a ["karnero"] :b ["sheperd"]}
+  {:a ["toro"] :b ["bull"]}
+  {:a ["manok"] :b ["chicken"]}
+  {:a ["itik"] :b ["duck"]}
+  {:a ["karnero"] :b ["butcher"]}
+  {:a ["plato"] :b ["plate"]}
+  {:a ["platito"] :b ["small plate"]}
+  {:a ["trapo"] :b ["napkin" "wiping cloth" "to wipe"] :notes "stress first syllable if verb, last if noun"}
+  {:a ["kutsara"] :b ["spoon"] :notes "ts is t͡ʃ"}
+  {:a ["kutsarita"] :b ["teaspoon"] :notes "ts is t͡ʃ"}
+  {:a ["tinidor"] :b ["fork"]}
+  {:a ["mug"] :b ["mug"]}
+  {:a ["tasa" "baso" "cup"] :b ["cup"]}
+  {:a ["baso"] :b ["glass cup"]}
+  {:a ["kutsilyo"] :b ["knife"]}
+  {:a ["sud-an"] :b ["viand"] :notes "A soup paired with rice"}
+  {:a ["pan"] :b ["bread"]}
+  {:a ["bugas" "rice"] :b ["uncooked rice" "pimple"]}
+  {:a ["sabaw"] :b ["soup"]}
+  {:a ["lugaw" "pospas"] :b ["rice porridge"]}
+  {:a ["repolyo"] :b ["lettuce"]}
+  {:a ["mansanas"] :b ["apple"]}
+  {:a ["kalabasa"] :b ["squash"]}
+  {:a ["itlog"] :b ["egg"]}
+  {:a ["mais"] :b ["corn"]}
+  {:a ["homay" "homai"] :b ["rice plant"]}
+  {:a ["kanon"] :b ["cooked rice"]}
+  {:a ["pinya"] :b ["pineapple"]}
+  {:a ["simba"] :b ["to go to church"]}
+  {:a ["simbahan"] :b ["church"]}
+  {:a ["palitanan" "tindahan"] :b ["store"]}
+  {:a ["sine"] :b ["cinema"]}
+  {:a ["tinda"] :b ["to sell"]}
+  {:a ["palit"] :b ["to buy"]}
+  {:a ["palitan"] :b ["to buy for someone"]}
+  {:a ["priso"] :b ["to imprison"]}
+  {:a ["prisohan" "bilanggoan"] :b ["jail" "prison"]}
+  {:a ["kaonan"] :b ["eatery"]}
+  {:a ["kusina"] :b ["kitchen"]}
+  {:a ["sala"] :b ["living room"]}
+  {:a ["tambal"] :b ["medicine"]}
+  {:a ["tambalan"] :b ["to treat"]}
+  {:a ["tambalanan" "ospital"] :b ["hospital" "medical facility"]}
+  {:a ["kwarto"] :b ["room" "bedroom"]}
+  {:a ["banyo"] :b ["bathroom"]}
+  {:a ["garahe"] :b ["garage"]}
+  {:a ["gugma"] :b ["love"]}
+  {:a ["hinigugma"] :b ["sweetheart"]}
+  {:a ["dumot"] :b ["hate" "grudge"]}
+  {:a ["lagot"] :b ["anger"]}
+  {:a ["naglagot"] :b ["angry"]}
+  {:a ["kahadlok" "hadlok" "mahadlok"] :b ["fear"] :notes "hadlok is adjective"}
+  {:a ["kalipay" "lipay"] :b ["joy" "happiness"] :notes "lipay is adjective"}
+  {:a ["depresyon"] :b ["depression"]}
+  {:a ["guol"] :b ["sadness"] :notes "adjective"}
+  {:a ["kabalaka" "kaguol"] :b ["to worry"]}
+  {:a ["ideya"] :b ["idea"]}
+  {:a ["pasensya"] :b ["patience"]}
+  {:a ["kalag"] :b ["soul"]}
+  {:a ["kamtayan???"] :b ["death"]}
+  {:a ["dako"] :b ["big"]}
+  {:a ["pagdako"] :b ["growth"]}
+  {:a ["pagayo"] :b ["recovery"] :notes "pag-ayo"}
+  {:a ["dugay"] :b ["late" "takes long time"]}
+  {:a ["hinay"] :b ["slow"]}
+  {:a ["lagi" "man"] :b ["(politeness connector)"]}
+  {:a ["lagi!"] :b ["I already understand" "yeah yeah" "according to hearsay"]}
+  {:a ["langayan"] :b ["faffer"]}
+  {:a ["diba"] :b ["right"]}
+  {:a ["asawa"] :b ["wife"]}
+  {:a ["bana"] :b ["husband"]}
+  {:a ["langoy"] :b ["to swim"]}
+  {:a ["ligo"] :b ["to shower"]}
+  {:a ["tuo"] :b ["to believe"]}
+  {:a ["huwat" "hulat"] :b ["to wait"] :notes "huwat is more modern"}
+  {:a ["layat"] :b ["to jump"]}
+  {:a ["ngisi"] :b ["to smile"]}
+  {:a ["huna-huna" "mura" "isip"] :b ["to think"] :notes "isip is Tagalog and more formal"}
+  {:a ["hugas"] :b ["to wash"] :notes "hugas e.g. vegetables, car, etc"}
+  {:a ["laba"] :b ["to launder"] :notes "present/past naglaba"}
+  {:a ["labahan"] :b ["laundrette"]}
+  {:a ["lupad"] :b ["to fly"]}
+  {:a ["sayaw"] :b ["to dance"]}
+  {:a ["katkat"] :b ["to climb"]}
+  {:a ["sturya"] :b ["to talk"]}
+  {:a ["kanta"] :b ["to sing"]}
+  {:a ["hiwa"] :b ["to cut"]}
+  {:a ["-i" "-hi" "i-"] :b ["(request someone to do something)"]}
+  {:a ["-a"] :b ["(request to go somewhere)" "(order someone to do something)"]}
+  {:a ["-han"] :b ["(did something for someone)"]}
+  {:a ["isla"] :b ["island"]}
+  {:a ["-an"] :b ["(offer to do something for someone)"]}
+  {:a ["tika"] :b ["you"] :notes "offering something, or classical"}
+  {:a ["kuyog"] :b ["together"]}
+  {:a ["naay" "kuyog"] :b ["with"]}
+  {:a ["otsenta"] :b ["eighty"] :notes "ts is t͡ʃ"}
+  {:a ["mag-"] :b ["to ..." "(future tense when used with time adverb)"] :notes "mag- (... unya) as future tense is more formal than mu-"}
+  {:a ["katawa" "nagkatawa"] :b ["to laugh"]}
+  {:a ["apan"] :b ["but" "a catch"]}
+  {:a ["nabag-o"] :b ["changed"]}
+  {:a ["magbag-o"] :b ["to change"]}
+  {:a ["bagbag-o"] :b ["change"]}
+  {:a ["kato" "katung"] :b ["that"] :notes "katung = kato + nga"}
+  {:a ["mawala"] :b ["to be lost"]}
+  {:a ["atik"] :b ["joke" "fooling around"]}
+  {:a ["gyud"] :b ["(emphasis)"]}
+  {:a ["grabe" "grabeng"] :b ["(emphasis)"] :notes "grabeng = grabe nga"}
+  {:a ["kutob"] :b ["an end"]}
+  {:a ["hinayhinay"] :b ["slowly" "gradually"]}
+  {:a ["taman"] :b ["enough"]}
+  {:a ["pada(la)"] :b ["gullible (emotionally)" "vulnerable (emotionally)" "to send"]}
+  {:a ["gipadala"] :b ["sent (past)"]}
+  {:a ["kwarta"] :b ["money"]}
+  {:a ["balik" "nasad"] :b ["again"]}
+  {:a ["naa nasad ta ani"] :b ["here we go again"]}
+  {:a ["babai" "babae" "babaye"] :b ["woman"]}
+  {:a ["baws" "balus"] :b ["fight back"]}
+  {:a ["silingan"] :b ["neighbour"]}
+  {:a ["paghot"] :b ["dog bark"]}
+  {:a ["tahi"] :b ["sew"]}
+  {:a ["na-"] :b ["(past tense against somebody accusatory)"]}
+  {:a ["gi-"] :b ["(past tense against somebody purposefully)"]}
+  {:a ["ligsan" "ligis?"] :b ["run over"]}
+  {:a ["ga-" "naga-" "nag-" "na-"] :b ["(present tense)"] :notes "nag- and ga- are shortenings of naga-; nag- -> mag-; nag- -> nag- ni-"}
+  {:a ["mag-" "mu-"] :b ["(future tense)"]}
+  {:a ["ganiha" "ganina"] :b ["past"] :notes "adverb of time"}
+  {:a ["unya"] :b ["future"] :notes "adverb of time"}
+  {:a ["tanaw" "tan-aw"] :b ["to watch" "to look at"]}
+  {:a ["tan-awa" "awa???"] :b ["(please) look at"]}
+  {:a ["tanawn"] :b ["(a particular) look"]}
+  {:a ["salida"] :b ["TV show"]}
+  {:a ["conyo"] :b ["gen-z creole of English and Bisaya"]}
+  {:a ["balimbing"] :b ["unloyal" "like Brutus flip-flopping from Pompey to Caeser"]}
+  {:a ["damgo"] :b ["dream"]}
+  {:a ["gihapon"] :b ["still (time)"]}
+  {:a ["pwede"] :b ["can" "possibly"]}
+  {:a ["ganahan"] :b ["want" "like"]}
+  {:a ["kara-an" "tiguwang" "gor"] :b ["old"] :notes "only tiguwang or gor can be used for people"}
+  {:a ["taas" "ta-as" "ta as"] :b ["tall" "long"]}
+  {:a ["sweto" "swito"] :b ["knowledgable" "expert" "smooth"] :notes "can be positive or negative (knowitall)"}
+  {:a ["kama o"] :b ["smart"]}
+  {:a ["abli" "abyerto"] :b ["open" "ajar"] :notes "abli adjective/verb; abyerto classical adjective"}
+  {:a ["baho"] :b ["smelly" "bad smell"]}
+  {:a ["batan-on"] :b ["young"]}
+  {:a ["baduy"] :b ["cringy"]}
+  {:a ["bag-o"] :b ["new"]}
+  {:a ["daot"] :b ["spoiled" "skinny"] :notes "pronounced differently"}
+  {:a ["presko"] :b ["fresh"] :notes "preska is a drinks brand"}
+  {:a ["mubo"] :b ["short"]}
+  {:a ["bogo"] :b ["dumb"]}
+  {:a ["lingaw"] :b ["fun"]}
+  {:a ["padlingaw"] :b ["have fun???"]}
+  {:a ["alegre"] :b ["fun" "lively"]}
+  {:a ["guba"] :b ["broken"]}
+  {:a ["naguba"] :b ["broke"]}
+  {:a ["gutom"] :b ["hungry"]}
+  {:a ["uhaw"] :b ["thirsty"]}
+  {:a ["humot"] :b ["good smell"]}
+  {:a ["limpyo"] :b ["clean"]}
+  {:a ["aparador"] :b ["cabinet" "wardrobe"]}
+  {:a ["pa ... pajud" "pa" "pajud"] :b ["(hammer home adjective description)"]}
+  {:a ["samok"] :b ["annoying"]}
+  {:a ["parat"] :b ["salty"]}
+  {:a ["tau" "tao" "tawo"] :b ["person"]}
+  {:a ["taugi"] :b ["beansprouts"]}
+  {:a ["bayad"] :b ["payment"]}
+  {:a ["utang"] :b ["money owed"]}
+  {:a ["gasto"] :b ["to spend" "expenses"]}
+  {:a ["nagasto"] :b ["spent" "spent needfully"]}
+  {:a ["puti"] :b ["white"]}
+  {:a ["itom"] :b ["black"]}
+  {:a ["bakak"] :b ["lie"]}
+  {:a ["bakak-on"] :b ["liar"]}
+  {:a ["kasabot"] :b ["understand"]}
+  {:a ["tawgi" "tawag(i)"] :b ["to call"]}
+  {:a ["gud"] :b ["also"]}
+  {:a ["way" "walay"] :b ["nothing"]}
+  {:a ["kahibao" "kabao"] :b ["to know"]}
+  {:a ["tiwasa"] :b ["to finish (e.g. a drink)"]}
+  {:a ["ana" "niingon"] :b ["said"]}
+  {:a ["balita"] :b ["news"]}
+  {:a ["sagpa"] :b ["slap in the face"]}
+  {:a ["hapak"] :b ["smack"]}
+  {:a ["human" "'man" "huma"] :b ["done" "after"] :notes "Also 'ma' na"}
+  {:a ["himo"] :b ["to create"]}
+  {:a ["tudlo"] :b ["to teach"]}
+  {:a ["magtutudlo"] :b ["teacher"]}
+  {:a ["di maoy"] :b ["allegedly"]}
+  {:a ["maoy"] :b ["actual"]}
+  {:a ["mao"] :b ["(copula)???"]}
+  {:a ["ingon"] :b ["to say"]}
+  {:a ["naka-"] :b ["to manage to do"]}
+  {:a ["nakaingon"] :b ["what caused/es it/this"]}
+  {:a ["bentaha"] :b ["advantage"]}
+  {:a ["nakabentaha"] :b ["overpower???"]} ;my guess
+  {:a ["maka-"] :b ["in favour of"]}
+  {:a ["utok"] :b ["brain" "mind"]}
+  {:a ["talagsaon"] :b ["rare"]}
+  {:a ["nga" "ng"] :b ["(linker)" "refers to something" "(preposition)" "makes previous word related to next part of sentence" "that" "which" "as" "of" "(fluff)"]}
+  {:a ["lawas"] :b ["body"]}
+  {:a ["namatay"] :b ["died"]}
+  {:a ["gipatay"] :b ["killed"]}
+  {:a ["patay"] :b ["to kill" "dead"]}
+  {:a ["mopatay"] :b ["will kill"]}
+  {:a ["mamatay"] :b ["will die"]}
+  {:a ["o"] :b ["or"]}
+  {:a ["tungod"] :b ["because of" "due to" "close to"]}
+  {:a ["hilabot"] :b ["meddle" "tamper" "touch without permission"]}
+  {:a ["samtang"] :b ["while"]}
+  {:a ["gawas"] :b ["outside" "go outside" "to go out" "to escape"]}
+  {:a ["gigawas"] :b ["went outside"]}
+  {:a ["nasud"] :b ["nation"]}
+  {:a ["gahi"] :b ["hard"]}
+  {:a ["mas"] :b ["more"] :notes "in comparison"}
+  {:a ["dugnag"] :b ["more"] :notes "on top of something already there"}
+  {:a ["mas gamay"] :b ["smaller"]}
+  {:a ["mas maayo"] :b ["better"]}
+  {:a ["duol" "maduol" "dapit" "dapita"] :b ["near" "close"]}
+  {:a ["lisod" "lisud"] :b ["difficult"]}
+  {:a ["pulong"] :b ["word"]}
+  {:a ["sama"] :b ["alike" "like" "akin"]}
+  {:a ["giingnan"] :b ["told"]}
+  {:a ["giingon" "giingong"] :b ["alledged"] :notes "giingong = giingon + nga"}
+  {:a ["sumbong" "pagsumbong"] :b ["to accuse"]}
+  {:a ["sakto"] :b ["correct"]}
+  {:a ["istorya" "isturya" "turagsoy?"] :b ["story" "conversation"]}
+  {:a ["puspas"] :b ["garlicy soup"]}
+  {:a ["asin"] :b ["salt"]}
+  {:a ["pusil"] :b ["gun" "to shoot"]}
+  {:a ["nipusil???" "gipusil???"] :b ["shot"] :notes "https://www.sunstar.com.ph/superbalita-cebu/lalaki-gipusil-namatay-samtang-naglingkod"}
+  {:a ["Oktubre"] :b ["October"]}
+  {:a ["kaniadto" "kaniadtong"] :b ["last [time]"] :notes "kaniadtong = kaniadto nga"}
+  {:a ["dalan" "dan"] :b ["road" "street"]}
+  {:a ["dakbayan"] :b ["city?"]}
+  {:a ["shabu"] :b ["crystal meth"]}
+  {:a ["kapulisan"] :b ["police (as institution)"]}
+  {:a ["polis"] :b ["police (officer)"]}
+  {:a ["dakpan"] :b ["to catch"] :notes "more modern than sikop"}
+  {:a ["sikop"] :b ["caught"]}
+  {:a ["alas"] :b ["(said before the time)" "o'clock [number]" "at time o'clock"]}
+  {:a ["ilahan" "ilhan"] :b ["identification"]}
+  {:a ["giila"] :b ["identified"] :notes "-ila is short for ilahan; for humans"}
+  {:a ["kaila"] :b ["I know you"]}
+  {:a ["luod"] :b ["disgusting" "clay" "mud"]}
+  {:a ["hangol"] :b ["greedy" "needy"]}
+  {:a ["kinahanglan"] :b ["a need???"]}
+  {:a ["sayon"] :b ["easy"]}
+  {:a ["sayop"] :b ["wrong" "incorrect"]}
+  {:a ["kada"] :b ["every"]}
+  {:a ["ngabil"] :b ["lips"]}
+  {:a ["pareha"] :b ["alike" "akin"]}
+  {:a ["eyot" "iyot"] :b ["sex"]}
+  {:a ["bangga"] :b ["to crash"]}
+  {:a ["angol"] :b ["injured" "damaged" "unintentionally involved"]}
+  {:a ["nangaangol"] :b ["accidental injury"]}
+  {:a ["nanga-"] :b ["previously"]}
+  {:a ["laya"] :b ["free" "freed"]}
+  {:a ["alyas"] :b ["alias"]}
+  {:a ["kauban"] :b ["accomplice" "partner" "companion"] :notes "can be used in business"}
+  {:a ["kuha"] :b ["to grab" "to take"]}
+  {:a ["pinakete"] :b ["packet"]}
+  {:a ["gituohang"] :b ["believed to be"]}
+  {:a ["timbang"] :b ["to weigh" "weight"]}
+  {:a ["motibo"] :b ["motive"]}
+  {:a ["nasuta" "nakitan"] :b ["found" "discovered"]}
+  {:a ["makita"] :b ["(it shows)"]}
+  {:a ["suta" "kit-an"] :b ["to find"] :notes "kit-an is contemporary - etymology lies in kita"}
+  {:a ["krimen"] :b ["crime"]}
+  {:a ["biktima"] :b ["victim"]}
+  {:a ["libang" "malibang" "nalibang"] :b ["to defecate"]}
+  {:a ["milabang"] :b ["crossed"]}
+  {:a ["teritoryo"] :b ["territory"]}
+  {:a ["niisip"] :b ["concluded" "thinks"] :notes "formal"}
+  {:a ["subay"] :b ["to follow (literary)" "to follow (object)"]}
+  {:a ["sunod" "sunda" "nagsunod"] :b ["to follow (person, animal)"] :notes "sunda for request/advice; sunod for the actual verb"}
+  {:a ["sulbad"] :b ["to solve"]}
+  {:a ["kaso"] :b ["case"] :notes "criminal case"}
+  {:a ["kang"] :b ["(denotes ownership)"]}
+  {:a ["saksi"] :b ["witness"]}
+  {:a ["tudlo"] :b ["to point at" "to point out" "finger" "teach"]}
+  {:a ["mahatungod"] :b ["about" "concerning"]}
+  {:a ["matod"] :b ["according to"]}
+  {:a ["sam-ang"] :b ["cemetery"]}
+  {:a ["paasa"] :b ["to lead on"]}
+  {:a ["gukod"] :b ["to run after"]}
+  {:a ["libog"] :b ["confusing"]}
+  {:a ["rako"] :b ["I only"]}
+  {:a ["bisag"] :b ["any"]}
+  {:a ["bisag unsa"] :b ["whatever"]}
+  {:a ["bisag asa"] :b ["wherever" "anywhere"]}
+  {:a ["pirmi"] :b ["always"]}
+  {:a ["sigarilyo"] :b ["cigarette"]}
+  {:a ["kung"] :b ["if"]}
+  {:a ["tambay"] :b ["loiter"]}
+  {:a ["unta"] :b ["to desire" "to wish"]}
+  {:a ["kuyaw"] :b ["strange"]}
+  {:a ["ambi"] :b ["give it to me"]}
+  {:a ["kayo" "kalayo"] :b ["fire"]}
+  {:a ["uling"] :b ["coal"]}
+  {:a ["ulingan"] :b ["coalpit"]}
+  {:a ["sunuk"] :b ["on fire"]}
+  {:a ["kinabuhi"] :b ["life"]}
+  {:a ["lagnub"] :b ["cave" "neighbourhood" "safe space" "shared space but yours"]}
+  {:a ["kamot"] :b ["hand"]}
+  {:a ["samot"] :b ["even (more)"]}
+  {:a ["chinita"] :b ["cute Chinese"]}
+  {:a ["kasagang"] :b ["fathom"]}
+  {:a ["hilak"] :b ["to cry"]}
+  {:a ["kadyot" "kadiyot"] :b ["for a short time" "in a bit"]}
+  {:a ["tanan"] :b ["all"]}
+  {:a ["ipadaplin"] :b ["to put to the side"]}
+  {:a ["daplin"] :b ["side"]}
+  {:a ["palata"] :b ["to relax so deeply that you rot"]}
+  {:a ["lata"] :b ["to rot" "to decay" "to wilt" "rotten"]}
+  {:a ["ood" "ud"] :b ["worm"]}
+  {:a ["kat-on" "nagkat-on"] :b ["to learn"]}
+  {:a ["gnilnig"] :b ["impressive"]}
+  {:a ["pwesto"] :b ["position"]}
+  {:a ["lingkod"] :b ["to sit" "to sit down"]}
+  {:a ["naglingkod"] :b ["sitting down"]}
+  {:a ["sikyu"] :b ["security (guard)"]}
+  {:a ["napalgang"] :b ["encountered?"]}
+  {:a ["palag"] :b ["on gainsay"]}
+  {:a ["biya" "mobiya"] :b ["to leave"]}
+  {:a ["gikan"] :b ["was there" "were there"]}
+  {:a ["mugikan"] :b ["departed"]}
+  {:a ["abuso" "nangabuso"] :b ["to abuse"]}
+  {:a ["mahay" "pagmahay"] :b ["to regret"]}
+  {:a ["kawat" "gikawat"] :b ["to steal"]}
+  {:a ["puhon"] :b ["soon"]}
+  {:a ["malumay"] :b ["gentle"]}
+  {:a ["patid"] :b ["to kick"]}
+  {:a ["lumay"] :b ["love potion" "poison"]}
+  {:a ["sunod"] :b ["next"]}
+  {:a ["ulahi"] :b ["before (in rank)" "previous" "last (e.g. in a race)"]}
+  {:a ["sauna"] :b ["before (in time)"]}
+  {:a ["tuon" "nagtuon"] :b ["to study"]}
+  {:a ["kulata"] :b ["beating"]}
+  {:a ["kulataha"] :b ["to beat (request)"]}
+  {:a ["gikulata"] :b ["beaten"]}
+  {:a ["kulatahon"] :b ["will beat"]}
+  {:a ["bun-og"] :b ["bruise"]}
+  {:a ["naputos"] :b ["wrapped"]}
+  {:a ["putos"] :b ["to wrap" "wrapping"]}
+  {:a ["ulitawo"] :b ["bachelor"]}
+  {:a ["dali"] :b ["fast"]}
+  {:a ["ron"] :b ["(threat marker)"]}
+  {:a ["lobot"] :b ["bum" "butt" "ass"]}
+  {:a ["haluk" "hawk"] :b ["kiss" "to kiss"]}
+  {:a ["tiyan"] :b ["tummy"]}
+  {:a ["sad"] :b ["also"]}
+  {:a ["di ko"] :b ["I won't" "I refuse" "I object"]}
+  {:a ["di baya"] :b ["I object to your claim that you do/did something"]}
+  {:a ["tabon"] :b ["lid" "cover"]}
+  {:a ["tabonan"] :b ["to cover"]}
+  {:a ["dun-gan"] :b ["ear" "heard something"]}
+  {:a ["apil"] :b ["to join" "to belong" "to include" "to pertain"] :notes "e.g. join a group when not invited"}
+  {:a ["apil-apilon"] :b ["person who joined without being invited"]}
+  {:a ["sagdi"] :b ["leave alone"]}
+  {:a ["ngampanya"] :b ["campaign"]}
+  {:a ["kusog"] :b ["loud"]}
+  {:a ["tukar"] :b ["music"]}
+  {:a ["sakit"] :b ["painful" "illness"]}
+  {:a ["mura"] :b ["lookalike" "likeminded" "like" "same"] :notes "as a result of speculation"}
+  {:a ["murag"] :b ["it seems [that]" "it sounds like"] :notes "mura + ug"}
+  {:a ["agom"] :b ["to make use of"] :notes "Unknown to Mikha"}
+  {:a ["hiagom"] :b ["to suffer"] :notes "Unknown to Mikha"}
+  {:a ["nahiagoman"] :b ["suffered (from something)"]}
+  {:a ["lalaki"] :b ["man"]}
+  {:a ["patabang"] :b ["asking for help"]}
+  {:a ["tabang"] :b ["to help"] :notes "could also be 'help in beating'"}
+  {:a ["gitabangan"] :b ["helping situation/crowd" "emergency theatre"]}
+  {:a ["pahimo"] :b ["asking for create"]}
+  {:a ["unom"] :b ["six"]}
+  {:a ["Sabado"] :b ["Saturday"]}
+  {:a ["Insik" "Insek"] :b ["Chinese"]}
+  {:a ["Ininglis"] :b ["English"]}
+  {:a ["kalabutan"] :b ["concerning"] :notes "not an everyday word"}
+  {:a ["inisyal"] :b ["initial"]}
+  {:a ["taho"] :b ["news story" "account" "chronicle"]}
+  {:a ["negosyo"] :b ["business"] :notes "syo like sho"}
+  {:a ["kapitan"] :b ["captain"]}
+  {:a ["tagak" "natagak"] :b ["to fall"]}
+  {:a ["baga"] :b ["thick" "embers"] :notes "with rising tone is thick; straight tone is embers"}
+  {:a ["nagbaga"] :b ["burning embers"]}
+  {:a ["naugdaw"] :b ["burned down" "raised"]}
+  {:a ["sunog"] :b ["massive fire" "fire!!!"]}
+  {:a ["Huwebes"] :b ["Thursday"]}
+  {:a ["tigi"] :b ["to struggle"] :notes "can be used in a postiive sense e.g. eager to struggle with something"}
+  {:a ["kumbati"] :b ["combat"]}
+  {:a ["kalabot"] :b ["involvement" "involving"]}
+  {:a ["aron"] :b ["so that"]}
+  {:a ["naghigugma"] :b ["in love"]}
+  {:a ["Lunis"] :b ["Monday"]}
+  {:a ["samad"] :b ["cut" "wound" "lesion" "to wound" "to hurt" "to injure" "to hurt someone's feelings"]}
+  {:a ["samdan"] :b ["wounded"] :notes "especially by a weapon"}
+  {:a ["pinusilan"] :b ["gunshot wound"]}
+  {:a ["liog"] :b ["neck" "to hit the neck"]}
+  {:a ["wa kay"] :b ["you have none"]}
+  {:a ["wa koy"] :b ["I have none"]}
+  {:a ["igsuon"] :b ["brother" "sister" "sibling"]}
+  {:a ["ana ko"] :b ["I said"]}
+  {:a ["bitbit"] :b ["to carry"]}
+  {:a ["badoy"] :b ["lame"]}
+  {:a ["angayan"] :b ["suits"]}
+  {:a ["nishagit" "nisyagit"] :b ["shouted"]}
+  {:a ["hilom"] :b ["quiet"]}
+  {:a ["nihilom"] :b ["quietened down"]}
+  {:a ["anak"] :b ["my child"]}
+  {:a ["hawa"] :b ["to leave"]}
+  {:a ["nihawa"] :b ["left (a place, company)"]}
+  {:a ["paki"] :b ["care"] :notes "very informal and borderline Tagalog, e.g. nakoy paki - I have care"}
+  {:a ["nakoy" "naa koy"] :b ["I have [something]"]}
+  {:a ["buot"] :b ["inner thoughts" "inner feelings" "inner sentiment"]} ;???
+  {:a ["ikog"] :b ["feeling too scared/humble/pathetic"] :notes "e.g. to ask for something; Mikha is ikog about asking parents for a ride"}
+  {:a ["sabak"] :b ["sit on the lap"]}
+  {:a ["lakwatsa"] :b ["escapade"] :notes "Tagalog; Mikha says it's not dangerous"}
+  {:a ["bintana"] :b ["window"]}
+  {:a ["tsinelas"] :b ["slippers"]}
+  {:a ["nagtsinelas" "magtsinelas"] :b ["wear slippers"]}
+  {:a ["baki"] :b ["frog"]}
+  {:a ["nilaktan"] :b ["the way you walk"]}
+  {:a ["linya"] :b ["(speaking) line"]}
+  {:a ["tingbitay"] :b ["(the day before paycheque day and you're low on funds)"]}
+  {:a ["lawa-lawa"] :b ["cobweb"]}
+  {:a ["galawa-lawa"] :b ["cobwebbed"]}
+  {:a ["nana"] :b ["already" "na kana"]}
+  {:a ["pitaka"] :b ["wallet"]}
+  {:a ["busa"] :b ["therefore"]}
+  {:a ["tabian"] :b ["talkative"]}
+  {:a ["utot"] :b ["to fart"]}
+  {:a ["dugab"] :b ["to burp"]}
+  {:a ["pasayloa" "pasaylo"] :b ["sorry" "to forgive"]}
+  {:a ["asa ani" "hain ani"] :b ["which"]}
+  {:a ["tigom"] :b ["meeting"] :notes "outrageously formal"}
+  {:a ["sabay"] :b ["enjoy" "participate"] :notes "provisional"}
+  {:a ["rani"] :b ["only this"]}
+  {:a ["hinumdumi"] :b ["remember"]}
+  {:a ["sugot"] :b ["to agree" "to permit"]}
+  {:a ["sugton"] :b ["to agree (to be bf/gf) (courtship)"]}
+  {:a ["hangtod"] :b ["until ..."]}
+  {:a ["hangtod sa hangtod"] :b ["forever and ever"]}
+  {:a ["lain"] :b ["other" "another"]}
+  {:a ["diskarte"] :b ["strategy (courtship)"]}
+  {:a ["gubat"] :b ["war"]}
+  {:a ["pakigubat"] :b ["being in war" "going to war"]}
+  {:a ["kapa-kapa"] :b ["fluttering (like a butterfly)"]}
+  {:a ["magbabalak"] :b ["poet"]}
+  {:a ["sabot"] :b ["consensus" "agreed time" "to come to a consensus" "to agree a time"]}
+  {:a ["pasabot"] :b ["(please) explain"]}
+  {:a ["basta"] :b ["provided that" "so long as" "because it's provided that" "enough!"]}
+  {:a ["dugo"] :b ["blood"]}
+  {:a ["dula" "pagdula" "magdula"] :b ["game" "to play"]}
+  {:a ["ilaila"] :b ["get acquainted"]}
+  {:a ["abot"] :b ["arrival"]}
+  {:a ["muabot"] :b ["to arrive (in the future)"]}
+  {:a ["niabot"] :b ["arrived???"]}
+  {:a ["pag-abot"] :b ["arriving"]}
+  {:a ["timo"] :b ["to snack" "having/eating a snack"]}
+  {:a ["matimo"] :b ["snack"]}
+  {:a ["pagpili"] :b ["do choose"]}
+  {:a ["pili"] :b ["to choose" "to pick"]}
+  {:a ["la'g" "lang ug"] :b ["(soft request)"]}
+  {:a ["komportable"] :b ["comfortably" "comfort" "comfortable"]}
+  {:a ["ay'g" "ayaw ug"] :b ["don't"]}
+  {:a ["nagluha"] :b ["crying"] :notes "fancy way"}
+  {:a ["luha"] :b ["tear drop"]}
+  {:a ["tagay"] :b ["social drink"] :notes "medieval agricultural roots"}
+  {:a ["kaykag"] :b ["kaayo ka ug"]}
+  {:a ["hamis"] :b ["smooth"] :notes "texture"}
+  {:a ["aynag"] :b ["ayaw nag"]}
+  {:a ["wa na" "wa nay"] :b ["no more"]}
+  {:a ["ali"] :b ["come (to place)"]}
+  {:a ["kabuok" "ka???"] :b ["X many Y" "whole"]}
+  {:a ["-on"] :b ["(demonym)" "(person or noun of such)"]}
+  {:a ["tulog"] :b ["to sleep" "sleep"]}
+  {:a ["nagtulog"] :b ["sleeping"]}
+  {:a ["parsela"] :b ["parcel???"]}
+  {:a ["pagmaayo"] :b ["very much"]}
+  {:a ["bagad"] :b ["nature???"]}
+  {:a ["bahin"] :b ["share (of something)"]}
+  {:a ["ipa-" "ipag-???"] :b ["(ask someone to make sure someone does it)"]}
+  {:a ["ayo"] :b ["to fix" "hello?"]}
+  {:a ["ambit"] :b ["to share" "to declare"]}
+  {:a ["halang"] :b ["spicy"]}
+  {:a ["siga"] :b ["bright"]}
+  {:a ["masigo"] :b ["(clothing) fits"]}
+  {:a ["dapat"] :b ["???"]}
+  {:a [""] :b [""]}
+  {:a [""] :b [""]}
+  {:a [""] :b [""]}
+  {:a [""] :b [""]}
+  {:a [""] :b [""]}
+  {:a [""] :b [""]}
+  {:a [""] :b [""]}
+  {:a [""] :b [""]}
+  {:a [""] :b [""]}
+  {:a [""] :b [""]}
+  {:a [""] :b [""]}
+  {:a [""] :b [""]}
 ]
+
+
+;Sentences I'd like to be able to speak / write:
+; Can I have a glass of water please?
+;
+;Sentences I'd like to be able to vaguely understand:
+; 
+;
+
+;split examples into their own thing so they can mention many words?
+;it would be good because I'm already using the same examples for multiple entries
+
+;; MR, [22/10/2023 22:43]
+;; nya - unya - and then
+
+;; MR, [22/10/2023 22:45]
+;; Kayg - kaayog
+
+;; MR, [22/10/2023 22:47]
+;; Gibadlong - reprimanded
+
+;; MR, [22/10/2023 22:50]
+;; Naka mata - disturbed so woke up
+;; Naka - unintentionally
+
+;; MR, [22/10/2023 22:51]
+;; Inyu(ha) - y’all’s
+
+;; MR, [22/10/2023 22:53]
+;; Gai, gani - frustration due to repetition
+
+;; MR, [22/10/2023 22:55]
+;; (In)tawn - (pitiful marker)
+
+;; MR, [22/10/2023 22:57]
+;; Gipa- - allowed to
+
+;; MR, [22/10/2023 22:59]
+;; Ingnan - ignon when able to do
+
+;; MR, [22/10/2023 23:00]
+;; Da - (pride marker)
+
+;; MR, [22/10/2023 23:04]
+;; Kinsay ganahan - who wants it
+
+;; Patrick, [22/10/2023 15:02]
+;; never - never
+
+;; Patrick, [22/10/2023 15:06]
+;; pangutana - question
+
+;; Patrick, [22/10/2023 15:15]
+;; tig- - person of noun
+;; tighimo pan - baker
+
+;; Patrick, [22/10/2023 15:26]
+;; pwede pirmi moignon ko "di"
+
+;; Patrick, [22/10/2023 16:34]
+;; bali - upsidedown, inside out, inverted
+
+; kabalo???
+; niya???
